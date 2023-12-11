@@ -42,4 +42,19 @@ const person ={
     }
 }
 
-console.log("Output is here => ", person.fullName())
+// Accessing object methods objectName.methodName()
+// name = ObjectName.methodName()
+// If you access a method without the () parentheses, it will return the function definition
+console.log("Output is here => ", person.fullName()) // Must invoke this 
+
+// In JavaScript
+// this keyword refers to an object
+// which object depends on how this is being invoked (used or called)
+// The this keyword refers to different objects depending on how it is used:
+// In an object method this refers to the object
+// Alone this refers to the global object
+// In a function this refers to the global object
+// In a functin, in strict mode, this refers to undefined
+// In an event, this refers to the element that received the event
+/// Methods like call(), apply(), and bind() can refer this to any object
+
